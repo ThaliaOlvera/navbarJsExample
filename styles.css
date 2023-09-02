@@ -1,0 +1,93 @@
+body {
+  background-color: teal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+span {
+  position: absolute;
+  padding-top: 12px;
+  padding-left: 8px;
+}
+
+.menu-primary {
+  display: flex;
+  justify-content: center;
+
+  height: 40px;
+  margin: 0;
+  padding-top: 12px;
+
+  background-color: aliceblue;
+  list-style: none;
+}
+
+.menu-primary li {
+  width: 25vh;
+  cursor: pointer;
+}
+
+.menu-primary li:hover {
+  color: teal;
+}
+
+/*Toggle Menus*/
+.menu-clients ul {
+  padding-left: 20px;
+  border-bottom: solid 1px teal;
+  width: 150px;
+}
+
+.menu-services ul {
+  padding-left: 20px;
+  border-bottom: solid 1px teal;
+  width: 150px;
+}
+
+.menu-clients ul li {
+  list-style: none;
+  margin-top: 8px;
+}
+
+.menu-services ul li {
+  list-style: none;
+  margin-top: 8px;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: aliceblue;
+  }
+  .menu-primary li {
+    display: none;
+  }
+
+  #icon-home {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .menu-primary {
+    display: flex;
+    justify-content: center;
+
+    height: 10px;
+    margin: 0;
+    padding-top: 12px;
+
+    background-color: teal;
+    list-style: none;
+  }
+}
