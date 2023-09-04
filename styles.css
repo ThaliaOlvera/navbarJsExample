@@ -93,6 +93,9 @@ span {
 }
 
 @media only screen and (min-width: 601px) {
+  body {
+    background-color: purple;
+  }
   #icon-home {
     display: none;
   }
@@ -100,9 +103,6 @@ span {
     display: none;
   }
 
-  .menu-primary {
-    width: 100%;
-  }
   .menu-clients ul {
     position: absolute;
     top: 40px;
@@ -143,44 +143,19 @@ span {
 }
 
 @media only screen and (min-width: 768px) {
-  #icon-home {
-    display: none;
-  }
-  #icon-menu {
-    display: none;
-  }
-
-  .menu-clients ul {
-    position: absolute;
-    top: 40px;
-    background-color: blueviolet;
-    margin-left: 10px;
-    text-align: center;
-    border-bottom: solid 1px teal;
-  }
-
-  .menu-services ul {
+  body {
     background-color: aqua;
-    position: absolute;
-    text-align: right;
-    top: 40px;
   }
+}
 
-  .menu-clients ul li {
-    margin-top: 4px;
-    cursor: pointer;
+@media only screen and (min-width: 992pxpx) {
+  body {
+    background-color: salmon;
   }
+}
 
-  .menu-clients ul li:hover {
-    color: aliceblue;
-  }
-
-  .menu-services ul li {
-    margin-top: 4px;
-    cursor: pointer;
-  }
-
-  .menu-services ul li:hover {
-    color: aliceblue;
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: palevioletred;
   }
 }
