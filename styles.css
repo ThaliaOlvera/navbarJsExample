@@ -106,17 +106,18 @@ span {
   .menu-clients ul {
     position: absolute;
     top: 40px;
-    width: 550px;
+    width: 87%;
     margin-left: 20px;
     text-align: center;
-    border-bottom: solid 1px teal;
+    border-bottom: none;
   }
 
   .menu-services ul {
     position: absolute;
     text-align: right;
     top: 40px;
-    width: 470px;
+    width: 72%;
+    border-bottom: none;
   }
 
   .menu-clients ul li {
@@ -146,16 +147,57 @@ span {
   body {
     background-color: aqua;
   }
-}
 
-@media only screen and (min-width: 992pxpx) {
+  .menu-clients ul {
+    width: 86%;
+    border-bottom: none;
+  }
+  .menu-services ul {
+    width: 68%;
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 900px) {
   body {
-    background-color: salmon;
+    background-color: yellow;
+  }
+
+  .menu-clients ul {
+    width: 86%;
+    border-bottom: none;
+  }
+  .menu-services ul {
+    width: 67%;
+    border-bottom: none;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   body {
     background-color: palevioletred;
+  }
+
+  .menu-clients ul {
+    width: 91%;
+    border-bottom: none;
+  }
+  .menu-services ul {
+    width: 63%;
+    border-bottom: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: plum;
+  }
+
+  .menu-clients ul {
+    width: 90%;
+    border-bottom: none;
+  }
+  .menu-services ul {
+    width: 65%;
+    border-bottom: none;
   }
 }
