@@ -69,13 +69,23 @@ span {
 /*Responsive*/
 
 @media only screen and (max-width: 600px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .icon-container {
+    background-color: aliceblue;
+    width: 100%;
+    height: 40px;
+  }
+
   .menu-primary {
     display: flex;
     flex-direction: column;
     position: absolute;
     background-color: teal;
     top: 105px;
-    left: 50px;
+    left: 40px;
     padding: 0;
   }
 
@@ -89,40 +99,16 @@ span {
 
   #icon-home {
     position: absolute;
-    left: 250px;
+    left: 240px;
     display: flex;
     justify-content: center;
     cursor: pointer;
+    background-color: aliceblue;
   }
 
   #icon-menu {
-    width: 492px;
     background-color: aliceblue;
     cursor: pointer;
-  }
-
-  .menu-clients ul {
-    position: absolute;
-    left: 100px;
-    top: 105px;
-    width: 100px;
-  }
-
-  .menu-services ul {
-    position: absolute;
-    left: 100px;
-    top: 150px;
-    width: 100px;
-  }
-
-  .menu-clients ul li:hover {
-    cursor: pointer;
-    color: aliceblue;
-  }
-
-  .menu-services ul li:hover {
-    cursor: pointer;
-    color: aliceblue;
   }
 }
 
@@ -133,55 +119,14 @@ span {
   #icon-menu {
     display: none;
   }
-
-  .menu-clients ul {
-    position: absolute;
-    top: 40px;
-    width: 87%;
-    margin-left: 20px;
-    text-align: center;
-    border-bottom: none;
-  }
-
-  .menu-services ul {
-    position: absolute;
-    text-align: right;
-    top: 40px;
-    width: 72%;
-    border-bottom: none;
-  }
-
-  .menu-clients ul li {
-    margin-top: 4px;
-    cursor: pointer;
-  }
-
-  .menu-clients ul li:nth-child(2) {
-    margin-left: 44px;
-  }
-
-  .menu-clients ul li:hover {
-    color: aliceblue;
-  }
-
-  .menu-services ul li {
-    margin-top: 4px;
-    cursor: pointer;
-  }
-
-  .menu-services ul li:hover {
-    color: aliceblue;
+  .menu-mobile {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .menu-clients ul {
-    width: 86%;
-    border-bottom: none;
-  }
-  .menu-services ul {
-    width: 68%;
-    border-bottom: none;
+  .menu-mobile {
+    display: none;
   }
 }
 @media only screen and (min-width: 900px) {
