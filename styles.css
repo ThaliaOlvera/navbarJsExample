@@ -19,6 +19,9 @@ span {
   padding-left: 8px;
 }
 
+.inactive {
+  display: none;
+}
 .menu-primary {
   display: flex;
   justify-content: center;
@@ -66,36 +69,64 @@ span {
 /*Responsive*/
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: aliceblue;
+  .menu-primary {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: teal;
+    top: 105px;
+    left: 50px;
+    padding: 0;
   }
+
   .menu-primary li {
-    display: none;
+    margin-top: 24px;
+  }
+
+  .menu-primary li:hover {
+    color: aliceblue;
   }
 
   #icon-home {
+    position: absolute;
+    left: 250px;
     display: flex;
     justify-content: center;
-    position: relative;
     cursor: pointer;
   }
-  .menu-primary {
-    display: flex;
-    justify-content: center;
 
-    height: 10px;
-    margin: 0;
-    padding-top: 12px;
+  #icon-menu {
+    width: 492px;
+    background-color: aliceblue;
+    cursor: pointer;
+  }
 
-    background-color: teal;
-    list-style: none;
+  .menu-clients ul {
+    position: absolute;
+    left: 100px;
+    top: 105px;
+    width: 100px;
+  }
+
+  .menu-services ul {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: 100px;
+  }
+
+  .menu-clients ul li:hover {
+    cursor: pointer;
+    color: aliceblue;
+  }
+
+  .menu-services ul li:hover {
+    cursor: pointer;
+    color: aliceblue;
   }
 }
 
 @media only screen and (min-width: 601px) {
-  body {
-    background-color: purple;
-  }
   #icon-home {
     display: none;
   }
@@ -144,10 +175,6 @@ span {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    background-color: aqua;
-  }
-
   .menu-clients ul {
     width: 86%;
     border-bottom: none;
@@ -158,10 +185,6 @@ span {
   }
 }
 @media only screen and (min-width: 900px) {
-  body {
-    background-color: yellow;
-  }
-
   .menu-clients ul {
     width: 86%;
     border-bottom: none;
@@ -173,10 +196,6 @@ span {
 }
 
 @media only screen and (min-width: 1200px) {
-  body {
-    background-color: palevioletred;
-  }
-
   .menu-clients ul {
     width: 91%;
     border-bottom: none;
@@ -188,10 +207,6 @@ span {
 }
 
 @media only screen and (min-width: 1024px) {
-  body {
-    background-color: plum;
-  }
-
   .menu-clients ul {
     width: 90%;
     border-bottom: none;
